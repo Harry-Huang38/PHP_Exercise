@@ -1,49 +1,13 @@
 <style>
     body{background:url('https://png.pngtree.com/58pic/32/69/41/84f58PICitRcMXwz4vDXf_PIC2018.jpg');}  {text-align: center;} table {margin: auto;}
-    
-    table.Table 
-    {
-        width:50%;
-        border-collapse:collapse;
-        font-family:"Time New roman", Arial, Helvetica, sans-serif;
-    }
-
-    table.Table td,table.Table th
-    {
-        padding:3px 7px 2px 7px;
-        border:2px solid #98bf21;
-        font-size: 20px;
-    }
-
-    table.Table th
-    {
-        color:black;
-        background-color:#FFFFCC;
-        text-align: center;
-    }
-
-    table.Table td
-    {
-        color:black;
-        background-color:#66CCFF;
-        text-align: center;
-    }
-
-    h2{
-        text-align:center;
-	    font:bold 50px helvetica,arial,sans-serif;
-	    color:#fff;
-	    text-shadow:black 5px 5px 5px;
-    }
-
 </style>
 
 <?php 
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
     $minCss=' <link href="https://people.eecs.ku.edu/~m282h813/Lab09/Exercise3/style.css" rel="stylesheet">';
-
-	$userNAME= $_POST["userName"];
+    
+    $userNAME= $_POST["userName"];
 	$passWD = $_POST["password"];
 	$ps5 = $_POST["PS5"];
 	$ns = $_POST["NS"];
@@ -113,4 +77,5 @@
     echo"</tr>";
     
     echo "</table>";
+    echo "$minCss";
 ?>
