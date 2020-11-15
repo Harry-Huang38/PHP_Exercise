@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title> Lab09_Exercise 3: Web Store </title>
+    <center>
+        <h1>Welcome to EECS 448 Lab Web Store !</h1>
+    </center>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+    <form id="webStore" action="customerBackend.php" onsubmit="return myfunction()" method="post">
+        
+        <div class= "Jayhawk">
+            <img src="image/Jayhawk.png" width="100px" alt="Jayhawkerror" >
+        </div>
+
+        <table width=100%>
+            <td>
+                User Name:<input placeholder=" username" type="email" name="userName" id="userName">
+                Password:<input placeholder=" password" type="password" name="password" id="password">
+            </td>
+        </table>
+
+        <hr>
+        <h1>PRODUCT LIST</h1>
+        <table width="100%">
+            <tr>
+                <td align="right">
+                    Check out Here → <input type="submit" value="SUBMIT">
+                </td>
+            </tr>
+        </table>
+        <hr />
+
+
+
+        <table width="100%" align="center">
+            <tr>
+                <td align="center">
+                    <img src="image/ps5.jpg" width="80%" />
+                </td>
+                <td align="center">
+                    <img src="image/switch.jpg" width="80%" />
+                </td>
+                <td align="center">
+                    <img src="image/xbox.jpg" width="80%" />
+                </td>
+            </tr>
+
+            <tr>
+
+                <td align="center">
+                    <p>Product Name：PlayStation 5 <br> </p>
+                    <p style="font-style:italic">Price：$399.99</p>
+                </td>
+                <td align="center">
+                    <p>Product Name：Nintendo Switch <br></p>
+                    <p style="font-style:italic">Price：$362.99</p>
+                </td>
+                <td align="center">
+                    <p>Product Name：Xbox Serice X <br></p>
+                    <p style="font-style:italic">Price：$499.99</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <label for="PS5">Quantity(Please Input Number):</label>
+                    <input type="text" id="PS5" name="PS5" value=" 0">
+                </td>
+                <td align="center">
+                    <label for="NS">Quantity(Please Input Number):</label>
+                    <input type="text" id="NS" name="NS" value=" 0">
+                </td>
+                <td align="center">
+                    <label for="XBOX">Quantity(Please Input Number):</label>
+                    <input type="text" id="XBOX" name="XBOX" value=" 0">
+                </td>
+            </tr>
+        </table>
+
+        <center>
+            <br><br><input type="radio" name="shipping" value="7day" checked>Free 7 Day
+            <input type="radio" name="shipping" value="overNight">$50.00 Over Night
+            <input type="radio" name="shipping" value="threeDay">$5.00 Three Day
+            <input type="reset" value="RESET">
+        </center>
+
+    </form>
+    <script src="formChecker.js"></script>
+</body>
+
+</html>
